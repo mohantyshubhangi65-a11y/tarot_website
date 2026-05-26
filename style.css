@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0b0b1d;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    url("https://images.unsplash.com/photo-1527203561188-dae1bc1a417f") no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #ffd700;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 15px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.hero button {
+    margin-top: 25px;
+    padding: 12px 22px;
+    border: none;
+    background: #ffd700;
+    color: black;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: white;
+}
+
+/* Section */
+.section {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.section p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Services Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.2);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 25px rgba(255, 215, 0, 0.5);
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #ffd700;
+}
+
+/* Tarot Section */
+.tarot-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.tarot-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffd700;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tarot-btn:hover {
+    background: white;
+}
+
+.tarot-result {
+    margin-top: 30px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.3);
+}
+
+.tarot-result h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+/* Booking Form */
+.booking-form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+.booking-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.booking-form button {
+    padding: 12px;
+    background: #ffd700;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background: white;
+}
+
+/* Contact */
+.contact p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: black;
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
